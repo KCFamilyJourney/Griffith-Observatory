@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"
-import sign from "./assets/Hollywood_Sign.jpeg"
+import sign from "./assets/Griffith Observatory.png"
 
 function Header(props){
 
@@ -10,7 +10,7 @@ function Header(props){
         <thead className="thead">
         <tr>
             <th>
-                <img src={sign} alt="Hollywood Sign picture" style={{width: "200px"}}></img>
+                <img src={sign} alt="Griffith Observatory picture" style={{width: "200px"}}></img>
             </th>
             <th>
                 <h1><a href={props.reference}>{props.title}</a></h1>  

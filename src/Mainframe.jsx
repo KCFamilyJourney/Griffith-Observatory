@@ -6,20 +6,16 @@ import MyHikingMap from "./MyHikingMap";
 
 function Mainframe(){
 
-    const reference = "https://www.hollywoodsign.org";
+    const reference = "https://griffithobservatory.org/explore/griffith-park";
     const choices = [ 
-        {   name: "Lake Hollywood Trail",
-            file: "LakeHollywood.csv",
-            pos: {lat: 34.129156995834606,lng: -118.33640918218002} //34.129156995834606,-118.33640918218002
+        {   name: "Brush Canyon Trail and Mount Bell Loop",
+            file: "BrushCanyon.csv",
+            pos: {lat: 34.12501645871609,lng: -118.31391677586349} //34.12501645871609, -118.31391677586349
         },
-        {   name: "Hollywood Sign via Canyon Drive",
-            file: "CanyonDrive.csv" ,
+        {   name: "Observatory Trail Extended Loop",
+            file: "ObservatoryTrail.csv" ,
             pos: { lat: 34.12545624202727,lng: -118.31386991416954 } //34.12545624202727,-118.31386991416954
         },
-        {   name: "Hollywood Sign via Innsdale Trail and Mt Lee Drive",
-            file: "InnsdaleMtLee.csv",
-            pos: {lat: 34.1301075672801,lng: -118.3269378549816}//34.1301075672801,-118.3269378549816
-        } 
     ];
     const [selectedOption, setSelectedOption] = useState(0); // Initial selected option
 
@@ -29,7 +25,7 @@ function Mainframe(){
 
 
     return <>
-        <Header title={"Hollywood Sign"} reference={reference}/>
+        <Header title={"Griffith Observatory"} reference={reference}/>
         <Stack spacing={1} direction="row">
         {
             choices.map((item, index) => {
