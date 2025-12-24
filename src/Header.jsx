@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"
-import sign from "./assets/Griffith Observatory.png"
+import sign from "./assets/Griffith Observatory.jpg"
 
 function Header(props){
 
